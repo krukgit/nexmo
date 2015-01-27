@@ -15,7 +15,7 @@ module Nexmo
 
       @secret = options.fetch(:secret) { ENV.fetch('NEXMO_API_SECRET') }
 
-      @host = options.fetch(:host) { 'rest.nexmo.com' }
+      @host = options.fetch(:host) { 'api.nexmo.com' }
 
       @http = Net::HTTP.new(@host, Net::HTTP.https_default_port)
 
